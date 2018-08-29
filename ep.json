@@ -1,0 +1,10 @@
+{
+  "parts": [
+    {
+      "name": "ep_group_pad_list",
+      "hooks": {
+        "expressCreateServer" : "ep_group_pad_list/index:expressCreateServer"
+      }
+    }
+  ]
+}

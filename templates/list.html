@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Pad List</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Pad List</h1>
+      <table>
+        <tr>
+          <th>Pad</th>
+          <th>Last Edit</th>
+          <th>Groups</th>
+          <th>Authors</th>
+        </tr>
+      <% pads.forEach(function (pad) { %>
+        <tr>
+          <td><a href="/p/<%= pad.id.toString() %>"><%= pad.title.toString() %></a></td>
+          <td><%= pad.lastEdit.toString() %></td>
+          <td><%= pad.groups.toString() %></td>
+          <td><%= pad.authors.toString() %></td>
+        </tr>
+      <% }) %>
+      </table>
+    </div>
+  </body>
+</html>
