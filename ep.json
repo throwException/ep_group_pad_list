@@ -7,7 +7,7 @@
       },
       "hooks": {
         "expressCreateServer" : "ep_group_pad_list/index:expressCreateServer",
-        "eejsBlock_indexWrapper": "ep_group_pad_lis/index:eejsBlock_indexWrapper"
+        "eejsBlock_indexWrapper": "ep_group_pad_list/index:eejsBlock_indexWrapper"
       }
     }
   ]
