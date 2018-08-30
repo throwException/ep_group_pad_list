@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Pad List</title>
+    <link href="/static/plugins/ep_group_pad_list/static/css/list.css" rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
@@ -14,7 +15,7 @@
         </tr>
       <% pads.forEach(function (pad) { %>
         <tr>
-          <td><a href="/p/<%= pad.id.toString() %>"><%= pad.title.toString() %></a></td>
+          <td><a target="_blank" href="/p/<%= pad.id.toString() %>"><%= pad.title.toString() %></a></td>
           <td><%= pad.lastEdit.toString() %></td>
           <td><%= pad.groups.toString() %></td>
           <td><%= pad.authors.toString() %></td>
