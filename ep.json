@@ -6,7 +6,8 @@
         "aceInitialized": "ep_group_pad_list/static/js/main:postAceInit"
       },
       "hooks": {
-        "expressCreateServer" : "ep_group_pad_list/index:expressCreateServer"
+        "expressCreateServer" : "ep_group_pad_list/index:expressCreateServer",
+        "eejsBlock_indexWrapper": "ep_group_pad_lis/index:eejsBlock_indexWrapper"
       }
     }
   ]

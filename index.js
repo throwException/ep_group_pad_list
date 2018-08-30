@@ -5,6 +5,11 @@ var express = require('ep_etherpad-lite/node_modules/express');
 var db = require('ep_etherpad-lite/node/db/DB').db;
 var authorManager = require("ep_etherpad-lite/node/db/AuthorManager");
 
+exports.eejsBlock_indexWrapper = function (hook_name, args, cb) {
+  args.content = args.content + eejs.require("ep_group_pad_list/templates/index.ejs");
+  return cb();
+}
+
 function groupMatch(padGroups, userGroups) {
   var i;
   for (i = 0; i < padGroups.length; i++) {
